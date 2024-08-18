@@ -1,28 +1,28 @@
- .contacts-main {
+.contacts-main {
     background: linear-gradient(90deg, #1d392b 0%, #0b7a41 100%);
     color: #d2ecd1;
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 50px;
 }
 
 .contacts-title {
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bolder;
 }
 
 .contacts-description {
     padding-bottom: 60px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .form {
     color: #1d392b;
     border: 2px solid #11b05d;
     border-radius: 25px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@
 .form-row input[type='text'],
 .form-row input[type='email'],
 .form-row textarea {
-    font-size: 17px;
+    font-size: 18px;
     color: #1d392b;
     background-color: #FFFFFF;
     border: 1px solid #d2ecd1;
@@ -50,8 +50,7 @@
     color: #d2ecd1;
     font-size: 20px;
     font-weight: bolder;
-    padding-bottom: 15px;
-    
+    padding-bottom: 15px; 
 }
 
 .form-button {
@@ -71,3 +70,71 @@
     background-color: #11b05d;
     border: 2px solid #0ddf72; 
 } 
+
+
+@media(min-width: 800px) {
+
+    .contacts-main {
+        padding: 100px;
+    }
+
+    .contacts-title {
+        font-size: 36px;  
+    }
+
+    .contacts-description {
+        font-size: 24px;
+    }
+
+    .form {
+        width: 80%;
+    }
+
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row textarea {
+        font-size: 24px;
+    }
+
+    .form-row label {
+        font-size: 28px;
+    }
+
+    .form-button {
+        font-size: 28px;
+    }
+}
+
+@media(min-width: 1500px) {   
+
+    .contacts-main {
+        padding: 200px;
+    }
+
+    .contacts-title {
+        font-size: 46px;
+    }
+
+    .contacts-description {
+        font-size: 36px;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row textarea {
+        font-size: 36px;
+    }
+
+    .form-row label {
+        font-size: 42px;
+    }
+
+    .form-button {
+        font-size: 42px;
+    }
+
+}
