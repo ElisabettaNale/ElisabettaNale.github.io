@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Elisabetta Nale - Contatti</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.svg"/>
+    <link rel="stylesheet" href="../assets/css/style.css"/>
+    <link rel="stylesheet" href="../assets/css/style_contacts.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "ZVQ7TaDr-a_97FpJp",
+            });
+        })();
+    </script>
+    <script src="contacts.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox"><img src="../assets/img/menu.svg" alt="menu icon" width="30"></label>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about_me.html">Su di me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contacts.html">Contatti</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-media">
+            <a href="https://github.com/ElisabettaNale?tab=repositories" target="_blank"><img src="../assets/img/github_icon.svg" width="30"></a>
+            <a href="https://www.linkedin.com/in/elisabetta-nale/" target="_blank"><img src="../assets/img/linkedIn_icon.png" width="30"></a> 
+        </div>
+
+    </header>
+
+    <main class="contacts-main"> 
+
+        <p class="contacts-title">
+           Contatti
+        </p>
+        <p class="contacts-description"> 
+            Grazie per aver visitato il mio sito!<br/>
+            Sono sempre alla ricerca di nuove opportunità nel mondo dello
+            sviluppo web. Se sei interessato a collaborare con me, compila 
+            il form qui sotto e sarò felice di risponderti al più presto!
+        </p> 
+
+        <div class="form">
+            <div class="form-row">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Mario" required>
+            </div>
+            <div class="form-row">
+                <label for="surname">Cognome</label>
+                <input type="text" id="surname" placeholder="Rossi" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="mario.rossi@gmail.com" required>
+            </div>
+            <div class="form-row">
+                <label for="message">Messaggio</label>
+                <textarea id="message" placeholder="Scrivi qui il tuo messaggio..." rows="10" required></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit" onclick="sendMail()" class="form-button">Invia</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+
+        <div class="footer">
+           <p>© Elisabetta Nale 2024</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+

@@ -1,0 +1,73 @@
+ .contacts-main {
+    background: linear-gradient(90deg, #1d392b 0%, #0b7a41 100%);
+    color: #d2ecd1;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.contacts-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.contacts-description {
+    padding-bottom: 60px;
+    font-size: 20px;
+}
+
+.form {
+    color: #1d392b;
+    border: 2px solid #11b05d;
+    border-radius: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row textarea {
+    font-size: 17px;
+    color: #1d392b;
+    background-color: #FFFFFF;
+    border: 1px solid #d2ecd1;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px; 
+}
+
+.form-row label {
+    color: #d2ecd1;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    
+}
+
+.form-button {
+    color: #1d392b;
+    background-color: #0ddf72;
+    border: 2px solid #11b05d;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.form-button:hover { 
+    color: #ffffff;
+    background-color: #11b05d;
+    border: 2px solid #0ddf72; 
+} 
