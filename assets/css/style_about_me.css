@@ -9,7 +9,7 @@
 .aboutme-title {
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bolder;
 }
 
@@ -18,11 +18,11 @@
 }
 
 .aboutme-description, .aboutme-section, .aboutme-conclusions h2 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .aboutme-description, .aboutme-section, .aboutme-conclusions p {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .aboutme-section {
@@ -54,7 +54,7 @@
     padding: 15px;
     margin-top: 20px;
     width: 160px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     transition: all 0.6s;
 }
@@ -78,9 +78,41 @@
 }
 
 
-@media(max-width: 800px) {
+@media(min-width: 800px) {
 
-   
-    
-    
+    .aboutme-title {
+        font-size: 36px;  
+    }
+
+    .aboutme-description h2, .aboutme-section h2, .aboutme-conclusions h2 {
+        font-size: 24px;  
+    }
+
+    .aboutme-description, .aboutme-section, .aboutme-conclusions p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 24px;
+    }
+}
+
+@media(min-width: 1500px) {   
+
+    .aboutme-title, .aboutme-description h2, .aboutme-section h2, .aboutme-conclusions h2 {
+        font-size: 46px;
+    }
+
+    .aboutme-description h2, .aboutme-section h2, .aboutme-conclusions h2 {
+        font-size: 36px;
+    }
+
+    .aboutme-description, .aboutme-section, .aboutme-conclusions p {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 36px;
+    }
+
 }
