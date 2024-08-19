@@ -20,15 +20,6 @@ header {
     display: none;
 }
 
-#menu-checkbox:checked ~ .navbar {
-    display: initial;
-    align-items: center;
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    right: 0%;
-}
-
 .navbar ul {
     display: flex;
     flex-direction: column;
@@ -60,6 +51,15 @@ header {
     display: none;
 }
 
+#menu-checkbox:checked ~ .navbar {
+    display: initial;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+}
+
 header label {
     font-size: 20px;
     cursor: pointer;
@@ -72,8 +72,11 @@ header label {
 }
 
 .social-media a {
-    width: 20px;
-    padding-right: 40px;
+    padding-right: 20px;
+}
+
+.social-media img {
+    width: 30px;
 }
 
 .main {
@@ -210,8 +213,11 @@ footer {
     }
 
     .social-media a {
-        width: 25px;
-        padding-right: 50px;
+        padding-right: 25px;
+    }
+
+    .social-media img {
+        width: 40px;
     }
 
     .main {
@@ -276,8 +282,11 @@ footer {
     }
 
     .social-media a {
-        width: 30px;
         padding-right: 60px;
+    }
+
+    .social-media img {
+        width: 40px;
     }
 
     .title {

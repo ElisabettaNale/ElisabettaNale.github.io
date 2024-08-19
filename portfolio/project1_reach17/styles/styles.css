@@ -16,37 +16,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 24px;
 }
 
 h2, p {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 30px;
+    font-size: 18px;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h5 {
-    font-size: 17px;
+    font-size: 14px;
 }
 
 /* header */
 .header {
+    background-color: #5995DA;
     display: flex; 
     justify-content: space-between;
     padding: 15px;
     width: 100%;
-    background-color: #5995DA;
     position: fixed;
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 18px;
     color: #BF1B44;
 }
 
@@ -56,7 +52,7 @@ h5 {
 
 .menu > li {
     display: inline; 
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .menu > li a {
@@ -75,11 +71,12 @@ h5 {
 /* company introduction */
 .mission {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px;
     padding-top: 100px;
-    height: 50vh;
+    width: 100%;
 }
 
 .mission-title {
@@ -88,10 +85,11 @@ h5 {
 
 .core-business {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px;
-    height: 50vh;
+    height: 100vh;
 }
 
 .core-business-image {
@@ -99,7 +97,6 @@ h5 {
 }
 
 .core-business-text {
-    padding-left: 40px;
     text-align: right;
 }
 
@@ -118,7 +115,8 @@ h5 {
 
 .courses-elements {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .courses-element {
@@ -131,7 +129,7 @@ h5 {
     border-radius: 5px;
     width: 300px;
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .courses-element:hover {
@@ -144,30 +142,37 @@ h5 {
     display: flex;
     justify-content: space-between;
     background-color: #999999;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 15%;
     padding-right: 15%;
-    width: 100%;
+    width: 100vw;
 }
 
 .footer a {
-    font-size: 25px;
+    font-size: 14px;
 }
 
-@media only screen and (max-width: 950px) {
+@media (min-width: 800px) {
 
     .mission {
-        flex-direction: column;
-        height: 100vh;
+        flex-direction: row;
+        height: 50vh;
     }
     
     .core-business {
-        flex-direction: column;
-        height: 100vh;
+        flex-direction: row;
+        height: 50vh;
+    }
+
+    .core-business-text {
+        padding-left: 40px;
+        text-align: right;
     }
 
     .courses-elements {
-        flex-direction: column;
-        height: 100vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;    
     }
 }
