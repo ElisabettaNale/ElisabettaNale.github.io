@@ -9,20 +9,24 @@
 .aboutme-title {
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 24px;
-    font-weight: bolder;
 }
 
 .aboutme-description {
     padding-bottom: 60px;
 }
 
-.aboutme-description, .aboutme-section, .aboutme-conclusions h2 {
-    font-size: 18px;
-}
-
 .aboutme-description, .aboutme-section, .aboutme-conclusions p {
     font-size: 14px;
+}
+
+.aboutme-description-goal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutme-description-goal img {
+    padding-left: 10px;
 }
 
 .aboutme-section {
@@ -30,6 +34,14 @@
     border-radius: 25px;
     padding: 30px;
     margin-bottom: 30px;
+}
+
+.aboutme-section a {
+    color: #d2ecd1;
+}
+
+.aboutme-section a:hover {
+    color: #0ddf72;
 }
 
 .skills-container {
@@ -78,18 +90,10 @@
 }
 
 
-@media(min-width: 800px) {
+@media(min-width: 1000px) {
 
     .aboutme-main {
         padding: 100px;
-    }
-
-    .aboutme-title {
-        font-size: 36px;  
-    }
-
-    .aboutme-description h2, .aboutme-section h2, .aboutme-conclusions h2 {
-        font-size: 24px;  
     }
 
     .aboutme-description, .aboutme-section, .aboutme-conclusions p {
@@ -105,14 +109,6 @@
     
     .aboutme-main {
         padding: 200px;
-    }
-
-    .aboutme-title {
-        font-size: 46px;
-    }
-
-    .aboutme-description h2, .aboutme-section h2, .aboutme-conclusions h2 {
-        font-size: 36px;
     }
 
     .aboutme-description, .aboutme-section, .aboutme-conclusions p {

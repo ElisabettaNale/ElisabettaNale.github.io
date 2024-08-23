@@ -6,6 +6,18 @@
     text-decoration: none;
 } 
 
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
 header {
     background-color: #0ddf72;
     display: flex;
@@ -37,9 +49,9 @@ header {
     display: block;
     color: #1d392b;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 18px;
     padding: 5px;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .navbar ul li a:hover {
@@ -98,12 +110,10 @@ header label {
 }
 
 .title {
-    font-size: 24px;
     padding-bottom: 5%;
 }
 
 .subtitle1 {
-    font-size: 18px;
     padding-bottom: 5%;
 }
 
@@ -134,7 +144,6 @@ header label {
 
 .subtitle2 a {
     color: #d2ecd1;
-    font-size: 18px;
 }
 
 .subtitle2 a:hover {
@@ -189,7 +198,19 @@ footer {
     font-size: 14px;
 }
 
-@media(min-width: 800px) {
+@media(min-width: 1000px) {
+
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
 
     header label {
         display: none;
@@ -204,7 +225,7 @@ footer {
     }
     
     .navbar ul li{
-        padding-left: 24px;
+        margin-left: 24px;
         white-space: nowrap;
     }
 
@@ -230,20 +251,8 @@ footer {
         flex: 1;
         margin-left: 100px;
     }
-    
-    .title {
-        font-size: 36px;
-    }
-    
-    .subtitle1 {
-        font-size: 24px;
-    }
 
     .call-to-action { 
-        font-size: 24px;
-    }
-
-    .subtitle2 a {
         font-size: 24px;
     }
 
@@ -277,8 +286,20 @@ footer {
 
 @media(min-width: 1500px) {
 
+    h1 {
+        font-size: 42px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 32px;
+    }
+
     .navbar ul li a {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .social-media a {
@@ -289,20 +310,8 @@ footer {
         width: 40px;
     }
 
-    .title {
-        font-size: 46px;
-    }
-    
-    .subtitle1 {
-        font-size: 36px;
-    }
-
     .call-to-action { 
-        font-size: 36px;
-    }
-
-    .subtitle2 a {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .subtitle2 img {
@@ -322,7 +331,7 @@ footer {
     }
 
     .location p {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .location img {

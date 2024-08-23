@@ -9,8 +9,6 @@
 .portfolio-title {
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 24px;
-    font-weight: bolder;
 }
 
 .portfolio-description {
@@ -39,14 +37,14 @@
 
 .card-title {
     color: #1d392b;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bolder;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .card-description {
     color: #1d392b;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .card-button {
@@ -68,26 +66,22 @@
     color: #d2ecd1;
 } 
 
-@media(min-width: 800px) {
+@media(min-width: 1000px) {
 
     .portfolio-main {
         padding: 100px;
     }
 
-    .portfolio-title {
-        font-size: 36px;  
-    }
-
     .portfolio-description {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .card-title {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .card-description {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .card-button {
@@ -101,24 +95,20 @@
         padding: 200px;
     }
 
-    .portfolio-title {
-        font-size: 46px;
-    }
-
     .portfolio-description {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .card-title {
-        font-size: 46px;
+        font-size: 32px;
     }
 
     .card-description {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .card-button {
-        font-size: 36px;
+        font-size: 32px;
     }
 
 }
