@@ -78,6 +78,11 @@ header label {
     display: initial;
 }
 
+#img-menu {
+    width: 30px;
+    height: 30px;
+}
+
 .social-media {
     display: flex;
     align-items: center;
@@ -87,8 +92,9 @@ header label {
     padding-right: 20px;
 }
 
-.social-media img {
+#img-github, #img-linkedin {
     width: 30px;
+    height: 30px;
 }
 
 .main {
@@ -150,9 +156,10 @@ header label {
     color: #0ddf72;
 }
 
-.subtitle2 img {
-    padding-right: 5px;
-    width: 3%;
+#img-start2impact {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
 }
 
 .main-right {
@@ -163,10 +170,11 @@ header label {
     justify-content: center;
 }
 
-.main-img {
-    width: 30%;
+#img-me {
+    width: 165px;
+    height: 236.45px;
     border-radius: 50%;
-    padding: 3%;
+    padding: 12px;
 }
 
 .location { 
@@ -176,9 +184,9 @@ header label {
     justify-content: center;
 }
 
-.location img {
-    padding-right: 5px;
-    width: 8%;
+#img-location {
+    width: 35px;
+    height: 35px;
 }
 
 .location p {
@@ -202,14 +210,17 @@ footer {
 
     h1 {
         font-size: 36px;
+        white-space: nowrap;
     }
     
     h2 {
         font-size: 24px;
+        white-space: nowrap;
     }
     
     h3 {
         font-size: 24px;
+        white-space: nowrap;
     }
 
     header label {
@@ -237,8 +248,9 @@ footer {
         padding-right: 25px;
     }
 
-    .social-media img {
-        width: 40px;
+    #img-github, #img-linkedin {
+        width: 30px;
+        height: 30px;
     }
 
     .main {
@@ -256,8 +268,10 @@ footer {
         font-size: 24px;
     }
 
-    .subtitle2 img {
-        width: 10%;
+    #img-start2impact {
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
     }
 
     .main-right {
@@ -266,16 +280,18 @@ footer {
         margin-right: 100px;
     }
     
-    .main-img {
-        width: 40%;
+    #img-me {
+        width: 200px;
+        height: 288px;
     }
 
     .location p { 
         font-size: 24px;
     }  
 
-    .location img {
-        width: 10%;
+    #img-location {
+        width: 45px;
+        height: 45px;
     }
 
     .footer {
@@ -303,19 +319,17 @@ footer {
     }
 
     .social-media a {
-        padding-right: 60px;
+        padding-right: 30px;
     }
-
-    .social-media img {
-        width: 40px;
-    }
-
+    
     .call-to-action { 
         font-size: 32px;
     }
 
-    .subtitle2 img {
-        width: 8%;
+    #img-start2impact {
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
     }
 
     .main-left {
@@ -326,16 +340,18 @@ footer {
         margin-right: 400px;
     } 
 
-    .main-img {
-        width: 50%;
+    #img-me {
+        width: 250px;
+        height: 363px;
     }
 
     .location p {
         font-size: 32px;
     }
 
-    .location img {
-        width: 12%;
+    #img-location {
+        width: 50px;
+        height: 50px;
     }
 
     .footer {
