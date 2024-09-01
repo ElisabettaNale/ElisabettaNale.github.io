@@ -273,6 +273,10 @@ header label {
     padding: 10px;
 }
 
+.skill-name {
+    color: #1d392b;
+}
+
 .button-container {
     display: flex;
     justify-content: space-around;
