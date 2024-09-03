@@ -60,6 +60,10 @@
     padding: 10px;
 }
 
+.skill-name {
+    color: #d2ecd1;
+}
+
 .button {
     color: #1d392b;
     background-color: #0ddf72;
