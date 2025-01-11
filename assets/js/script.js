@@ -28,14 +28,16 @@ const slideInObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
           entry.target.classList.add('slide-in-visible');
-          observer.unobserve(entry.target);  
+      } else {
+          entry.target.classList.remove('slide-in-visible');  
       }
   });
 }, {
-  threshold: 0.5 
+  threshold: 0.5  
 });
+
 document.querySelectorAll('.slide-in').forEach(element => {
-  slideInObserver.observe(element);
+  slideInObserver.observe(element); 
 });
 
 
@@ -44,6 +46,22 @@ document.querySelectorAll('.menu-item').forEach(item => {
   item.addEventListener('click', () => {
       document.getElementById('menu-checkbox').checked = false; 
   });
+});
+
+
+// Function for buttons
+const button = document.querySelectorAll('.button').forEach(item => {
+
+    item.addEventListener('mouseover', () => {
+      item.classList.add('button-active');
+    });
+    item.addEventListener('mouseout', () => {
+      item.classList.remove('button-active');
+    });
+    item.addEventListener('click', () => {
+      item.classList.add('button-active'); 
+      item.classList.remove('button-active');
+    });
 });
 
 
