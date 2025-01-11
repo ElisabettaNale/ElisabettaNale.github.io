@@ -3,31 +3,32 @@
 <html lang="en">
 
 <head>
-    <title>Elisabetta Nale - Full Stack Developer | Portfolio e CV</title>
+    <title>Elisabetta Nale - Full Stack Developer | projects e CV</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sono Elisabetta Nale e sono un Full Stack Developer. Esplora portfolio, CV e obiettivi orientati all'impatto sociale.">
+    <meta name="description" content="Sono Elisabetta Nale e sono un Full Stack Developer. Esplora projects, CV e obiettivi orientati all'impatto sociale.">
     <meta name="keywords" content="Elisabetta Nale, Full Stack Developer, Verona,
-    Portfolio, CV, Start2impact, Sviluppo web, front-end, back-end, lavoro, impatto sociale,
+    projects, CV, Start2impact, Sviluppo web, front-end, back-end, lavoro, impatto sociale,
     HTML, CSS, JavaScript, React, Node.js">
     <meta name="robots" content="noindex, follow">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://elisabettanale.github.io/index.html">
-    <meta property="og:title" content="Elisabetta Nale - Full Stack Developer | Portfolio e CV">
-    <meta property="og:description" content="Elisabetta Nale, Full Stack Developer. Esplora portfolio, CV e obiettivi orientati all'impatto sociale.">
+    <meta property="og:title" content="Elisabetta Nale - Full Stack Developer | projects e CV">
+    <meta property="og:description" content="Elisabetta Nale, Full Stack Developer. Esplora projects, CV e obiettivi orientati all'impatto sociale.">
     <meta property="og:image" content="https://elisabettanale.github.io/assets/img/preview.webp">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://elisabettanale.github.io/index.html">
-    <meta property="twitter:title" content="Elisabetta Nale - Full Stack Developer | Portfolio e CV">
-    <meta property="twitter:description" content="Elisabetta Nale, Full Stack Developer. Esplora portfolio, CV e obiettivi orientati all'impatto sociale.">
+    <meta property="twitter:title" content="Elisabetta Nale - Full Stack Developer | projects e CV">
+    <meta property="twitter:description" content="Elisabetta Nale, Full Stack Developer. Esplora projects, CV e obiettivi orientati all'impatto sociale.">
     <meta property="twitter:image" content="https://elisabettanale.github.io/assets/img/preview.webp">
-    <!--<script src="assets/js/functions.js" defer></script>-->
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- HEADER-->
     <header>
 
         <input type="checkbox" id="menu-checkbox">
@@ -35,11 +36,11 @@
         
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/about_me.html">Su di me</a></li>
-                <li><a href="pages/portfolio.html">Portfolio</a></li>
-                <li><a href="pages/cv.html">CV</a></li>
-                <li><a href="pages/contacts.html">Contatti</a></li>
+                <li><a href="index.html" class="menu-item">Home</a></li>
+                <li><a href="#aboutme" class="menu-item">Su di me</a></li>
+                <li><a href="#projects"class="menu-item">Progetti</a></li>
+                <li><a href="#skills" class="menu-item">Competenze</a></li>
+                <li><a href="#contacts" class="menu-item">Contatti</a></li>
             </ul>
         </nav>
 
@@ -50,70 +51,253 @@
 
     </header>
 
-    <main class="main"> 
+    <!-- SECTION: HOME -->
+    <section class="home"> 
 
-        <div class="main-top">
-            <div class="main-left"> 
-                <h1 class="title">ELISABETTA NALE</h1>
-                <h2 class="subtitle1">Full Stack Developer</h2>
-                <h2>Studente di:</h2>
-                <div class="subtitle2">
-                    <img src="assets/img/start2impact_logo.webp" alt="start2impact logo" id="img-start2impact" loading="lazy">
-                    <a href="https://www.start2impact.it/" target="_blank"><h2>start2impact</h2></a>
-                </div>
-                <div class="location">
-                    <img src="assets/img/location.svg" alt="Posizione icona" id="img-location" loading="lazy">
-                    <h2>Verona</h2>
-                </div>
-                <!--
-                <div class="progress-bar">
-                    <div class="progress-bar-fill"></div> 
-                    <span class="progress-bar-text">0%</span>
-                </div>
-                -->
-            </div>
+        <div class="home-top slide-in"> 
+            <img src="assets/img/me.webp" alt="Foto di Elisabetta" loading="lazy">   
+        </div>
 
-            <div class="main-right"> 
-                <img src="assets/img/me.webp" alt="Foto di Elisabetta" id="img-me" loading="lazy">   
+        <div class="home-bottom"> 
+            <p class="home-bottom-name slide-in">ELISABETTA NALE</p>
+            <div class="home-bottom-slide-in-container">
+                <p class="home-bottom-job">Full Stack Developer</p>
+                <div class="home-bottom-student-of">
+                    <p class="home-bottom-student-of-1">Studente di:</p>
+                    <div class="home-bottom-student-of-2">
+                        <img src="assets/img/start2impact_logo.webp" alt="start2impact logo" loading="lazy">
+                        <a href="https://www.start2impact.it/" target="_blank">start2impact</a>
+                    </div>
+                </div>
+                <div class="home-bottom-location">
+                  <img src="assets/img/location.svg" alt="Posizione icona" loading="lazy">
+                  <p>Verona</p>
+                </div> 
             </div>
         </div>
 
-        <div class="main-bottom">
-            <div class="card">
-                <div class="card-content">
-                    <h3 class="card-title">Il mio progetto più recente:<br><br>GreenEarth</br></h3>
-                    <p class="card-description">
-                        GreenEarth è una startup dedicata alla protezione e al 
-                        ripristino del nostro pianeta attraverso progetti di riforestazione 
-                        e pulizia degli oceani.<br/><br/>
-                        <strong>Obiettivo</strong>: realizzare un sito web semplice 
-                        e completo che descriva l'azienda e i suoi progetti.<br/><br/>
-                        <strong>Competenze tecniche</strong>: HTML, CSS e JavaScript. Responsive design.
-                    </p>
-                    <div class="skills-container">
-                        <div class="skill">
-                            <img class="skill-image" src="assets/img/HTML_icon.svg" alt="Icona HTML" width="40" height="40" loading="lazy"/>
-                            <p class="skill-name">HTML</p>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-image" src="assets/img/CSS_icon.svg" alt="Icona CSS" width="30" height="42" loading="lazy"/>
-                            <p class="skill-name">CSS</p>
-                        </div>
-                        <div class="skill">
-                            <img class="skill-image" src="assets/img/javascript_icon.webp" alt="Icona JavaScript" width="80" height="45" loading="lazy"/>
-                            <p class="skill-name">JavaScript</p>
-                        </div>
+    </section>
+
+    <!-- SECTION: ABOUT ME -->
+    <section id="aboutme"> 
+
+        <div class="aboutme-title slide-in">
+           <p>Su di me</p>
+        </div>
+
+        <div class="aboutme-description"> 
+            
+            <p class="slide-in">Benvenuto nel mio sito professionale!<br><br></p>
+            
+            <p class="slide-in">
+                Sto completando il master in Full Stack Development con Start2impact, 
+                una piattaforma che offre corsi avanzati per acquisire competenze pratiche e teoriche, 
+                con feedback da esperti del settore per perfezionare le mie abilità.<br><br>
+            </p>
+
+            <p class="slide-in">
+                Prima di intraprendere la carriera nel web development, ho lavorato per tre anni nel 
+                campo della bioinformatica, sviluppando competenze analitiche, tecniche e informatiche. 
+                Questa esperienza mi ha anche permesso di affinare le mie capacità di collaborazione e 
+                comunicazione grazie al lavoro in team internazionali.<br><br>
+            </p>
+
+            <p class="slide-in">
+                Il mio obiettivo è contribuire a progetti innovativi, risolvendo problemi concreti 
+                con soluzioni digitali che abbiano un impatto positivo e significativo sulla comunità 
+                e sul mondo in cui viviamo.
+            </p>
+                
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- SECTION: PROJECTS -->
+    <section id="projects"> 
+
+        <p class="projects-title slide-in">I miei progetti</p>
+            
+        <div class="cards-container">
+        <div class="card slide-in">
+            <div class="card-content">
+                <p class="card-title">Il mio sito professionale</p>
+                <p class="card-description">
+                    Il mio sito web professionale presenta i progetti realizzati e
+                    le competenze acquisite come Full Stack Developer. Inoltre racconta 
+                    il mio percorso di crescita professionale e fornisce una sezione di
+                    contatto per potenziali collaborazioni future.<br><br>
+                    <strong>Obiettivo</strong>: sviluppo di sito web completo.<br><br>
+                    <div class="card-skills">
+                        <div class="card-skill">HTML</div> 
+                        <div class="card-skill">CSS</div>
+                        <div class="card-skill">Responsive design</div>
                     </div>
-                    <div class="button-container">
-                        <a href="portfolio/project2_greenEarth/index.html" class="card-button" target="_blank">Esplora il progetto</a>
-                        <a href="pages/portfolio.html" class="card-button">Esplora il portfolio</a>
-                    </div>
+                </p>
+                <div class="card-buttons">
+                    <a href="https://github.com/ElisabettaNale/ElisabettaNale.github.io" class="card-button" target="_blank">Codice</a>
+                    <a href="https://elisabettanale.github.io" class="card-button">Esplora</a>
                 </div>
             </div>
         </div>
+        <div class="card slide-in">
+            <div class="card-content">
+                <p class="card-title">Il counter</p>
+                <p class="card-description">
+                    Il counter è una applicazione che funziona come un counter di numeri interi.
+                    Il counter è inizializzato a zero e permette all'utente di aumentare e 
+                    decrementare il valore di uno oppure di resettare
+                    alla configurazione iniziale.<br><br>
+                    <strong>Obiettivo</strong>: familiazziarsi con JavaScript.<br><br>
+                    <div class="card-skills">
+                        <div class="card-skill">HTML</div> 
+                        <div class="card-skill">CSS</div>
+                        <div class="card-skill">JavaScript</div>
+                    </div> 
+                </p>
+                <div class="card-buttons">
+                    <a href="https://github.com/ElisabettaNale/the_counter" class="card-button" target="_blank">Codice</a>
+                    <a href="https://main--joyful-mermaid-53efe2.netlify.app" class="card-button" target="_blank">Esplora</a>
+                </div>
+            </div>
+        </div>
+        <div class="card slide-in">
+            <div class="card-content">
+                <p class="card-title">HackerNews</p>
+                <p class="card-description">
+                    Una semplice piattaforma web che visualizza le ultime 
+                    notizie da Hacker News utilizzando la loro API.<br><br>
+                    <strong>Obiettivo</strong>: mostrarele notizie in tempo reale.<br><br>
+                    <div class="card-skills">
+                        <div class="card-skill">HTML</div> 
+                        <div class="card-skill">CSS</div>
+                        <div class="card-skill">JavaScript</div>
+                    </div>
+                </p>
+                <div class="card-buttons">
+                    <a href="https://github.com/ElisabettaNale/hacker_news" class="card-button" target="_blank">Codice</a>
+                    <a href="https://advancedjavascript-hackernews.netlify.app" class="card-button" target="_blank">Esplora</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
 
-    </main>
+    <hr>
 
+    <!-- SECTION: SKILLS -->
+    <section id="skills">
+
+        <p class="skills-title slide-in">Le mie competenze</p>
+
+        <div class="skills-container slide-in">
+            <p class="skills-container-title">Front-end development</p>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/HTML_icon.svg" alt="Icona HTML" width="40" height="40" loading="lazy"/>
+                <p class="skill-name">HTML</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/CSS_icon.svg" alt="Icona CSS" width="30" height="42" loading="lazy"/>
+                <p class="skill-name">CSS</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/javascript_icon.webp" alt="Icona JavaScript" width="80" height="45" loading="lazy"/>
+                <p class="skill-name">JavaScript</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/typescript_icon.webp" alt="Icona TypeScript" width="40" height="40" loading="lazy"/>
+                <p class="skill-name">TypeScript</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/angular_icon.webp" alt="Icona Angular" width="40" height="40" loading="lazy"/>
+                <p class="skill-name">Angular</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/react_icon.webp" alt="Icona React" width="70" height="39.38" loading="lazy"/>
+                <p class="skill-name">React</p>
+            </div>   
+        </div>
+
+        <div class="skills-container slide-in">
+            <p class="skills-container-title">Back-end development</p>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/python_icon.svg" alt="Icona Python" width="50" height="50" loading="lazy"/>
+                <p class="skill-name">Python</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/java_icon.svg" alt="Icona Java" width="40" height="40" loading="lazy"/>
+                <p class="skill-name">Java Basics</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/mysql_icon.webp" alt="Icona MySQL" width="55" height="38.16" loading="lazy"/>
+                <p class="skill-name">MySQL</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/node_javascript_icon.webp" alt="Icona Node.js" width="38" height="40.8" loading="lazy"/>
+                <p class="skill-name">Node.js</p>
+            </div>
+        </div>
+
+        <div class="skills-container slide-in">
+            <p class="skills-container-title">Conoscenze tecniche aggiuntive</p>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/R_icon.webp" alt="Icona R" width="50" height="38.73" loading="lazy"/>
+                <p class="skill-name">R</p>
+            </div> 
+            <div class="skill">
+                <img class="skill-image" src="assets/img/git_icon.webp" alt="Icona Git" width="50" height="50" loading="lazy"/>
+                <p class="skill-name">Git</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/bash_icon.webp" alt="Icona Bash" width="40" height="45.8" loading="lazy"/>
+                <p class="skill-name">Bash</p>
+            </div>
+            <div class="skill">
+                <img class="skill-image" src="assets/img/visual_studio_code_icon.webp" alt="Icona VSC" width="45" height="45" loading="lazy"/>
+                <p class="skill-name">VSC</p>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- SECTION: CONTACTS -->
+    <section id="contacts"> 
+
+        <p class="contacts-title">Contatti</p>
+
+        <p class="contacts-description"> 
+            Grazie per aver visitato il mio sito!<br/>
+            Sono sempre alla ricerca di nuove opportunità nel mondo dello
+            sviluppo web. Se sei interessato a collaborare con me, compila 
+            il form qui sotto e sarò felice di risponderti al più presto!
+        </p> 
+
+        <div class="form">
+            
+            <div class="form-row">
+                <input type="text" id="name" placeholder="Nome" required>
+            </div>
+            <div class="form-row">
+                <input type="text" id="surname" placeholder="Cognome" required>
+            </div>
+            <div class="form-row">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <textarea id="message" placeholder="Scrivi qui il tuo messaggio..." rows="10" required></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit" onclick="sendMail()" class="form-button">Invia</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- FOOTER -->
     <footer>
 
         <div class="footer">
