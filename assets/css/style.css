@@ -605,7 +605,7 @@ footer {
     
 }
 
-/* Classe per l'effetto slide-in */
+/* slide-in effect */
 .slide-in {
     transform: translateY(50px);  
     opacity: 0;
