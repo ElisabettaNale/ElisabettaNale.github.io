@@ -446,6 +446,12 @@ header label {
     padding: 7px; 
 }
 
+.form-row button {
+    max-width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+
 
 /* FOOTER */
 
