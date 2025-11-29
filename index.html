@@ -37,16 +37,19 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html" class="menu-item">Home</a></li>
-                <li><a href="#aboutme" class="menu-item">Su di me</a></li>
-                <li><a href="#projects"class="menu-item">Progetti</a></li>
-                <li><a href="#skills" class="menu-item">Competenze</a></li>
-                <!--<li><a href="#contacts" class="menu-item">Contatti</a></li>-->
+                <li><a href="#aboutme" class="menu-item">About me</a></li>
+                <li><a href="#projects"class="menu-item">My Projects</a></li>
+                <li><a href="#skills" class="menu-item">Technical Skills</a></li>
             </ul>
         </nav>
 
         <div class="social-media">
-            <a href="https://github.com/ElisabettaNale?tab=repositories" target="_blank"><img src="assets/img/github_icon.svg" id="img-github" alt="icona github" loading="lazy"></a>
-            <a href="https://www.linkedin.com/in/elisabetta-nale/" target="_blank"><img src="assets/img/linkedIn_icon.webp" id="img-linkedin" alt="icona linkedin" loading="lazy"></a> 
+            <a href="https://github.com/ElisabettaNale?tab=repositories" target="_blank">
+                <img src="assets/img/github_icon.svg" id="img-github" alt="icona github" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/elisabetta-nale/" target="_blank">
+                <img src="assets/img/linkedIn_icon.webp" id="img-linkedin" alt="icona linkedin" loading="lazy">
+            </a> 
         </div>
 
     </header>
@@ -54,28 +57,53 @@
     <!-- SECTION: HOME -->
     <section class="home"> 
 
-        <div class="home-top slide-in"> 
-            <img src="assets/img/me.webp" alt="Foto di Elisabetta" loading="lazy">   
-        </div>
+        <div>
 
-        <div class="home-bottom"> 
-            <p class="home-bottom-name slide-in">ELISABETTA NALE</p>
-            <div class="home-bottom-slide-in-container">
-                <p class="home-bottom-job">Full Stack Developer</p>
-                <div class="home-bottom-student-of">
-                    <!--
-                    <p class="home-bottom-student-of-1">Studente di:</p>
-                    <div class="home-bottom-student-of-2">
-                        <img src="assets/img/start2impact_logo.webp" alt="start2impact logo" loading="lazy">
-                        <a href="https://www.start2impact.it/" target="_blank">start2impact</a>
-                    </div>
-                    -->
+            <div id="homepage-background">
+
+                <div id="homepage-background-left">
+                    
                 </div>
-                <div class="home-bottom-location">
-                  <img src="assets/img/location.svg" alt="Posizione icona" loading="lazy">
-                  <p>Verona</p>
-                </div> 
+
+                <div id="homepage-background-right">
+                
+                </div>
+
             </div>
+
+            <div id="homepage-content">
+
+                <div id="homepage-content-left">
+                    <img class="img-me" src="assets/img/me.webp" alt="Foto di Elisabetta" loading="lazy"> 
+                </div>
+
+                <div id="homepage-content-right">
+                    <p class="content-name">
+                        ELISABETTA NALE
+                    </p>
+                    <div class="content-jobtitle-location-container">
+                        <p class="content-jobtitle">
+                            Full Stack Developer 
+                        </p>
+                        <div class="content-location">
+                            <img src="assets/img/location.svg" alt="Posizione icona" loading="lazy">
+                            <p>Verona, Italy</p>
+                        </div> 
+                    </div>
+                    <p class="content-description">
+                        I'm passionate about creating functional web solutions that
+                        meet clients' needs, contributing to their growth 
+                        and development.
+                    </p>
+                    <div class="call-to-actions-container">
+                        <button class="button button-cv"><a href="https://www.linkedin.com/in/elisabetta-nale/" target="_blank">CV</a></button>
+                        <button class="button button-projects"><a href="#projects">Projects</a></button>
+                        <button class="button button-skills"><a href="#skills">Skills</a></button>
+                    </div>
+                </div>
+                
+            </div>
+
         </div>
 
     </section>
@@ -83,55 +111,46 @@
     <!-- SECTION: ABOUT ME -->
     <section id="aboutme"> 
 
-        <div class="aboutme-title slide-in">
-           <p>Su di me</p>
-        </div>
+        <p class="aboutme-title slide-in-top">Su di me</p>
 
         <div class="aboutme-description"> 
             
-            <p class="slide-in"><strong>Benvenuto nel mio sito professionale!</strong><br><br></p>
+            <p class="slide-in-left"><strong>Benvenuto nel mio sito professionale!</strong><br><br></p>
             
-            <p class="slide-in">
-                Attualmente mi sto specializzando nel 
-                <strong>Full Stack Development</strong> 
-                attraverso un Master con 
-                <a class="bold-italics" 
-                href="https://www.start2impact.it/" 
-                target="_blank"
-                >Start2impact</a>, 
-                una piattaforma all'avanguardia che offre corsi avanzati per sviluppare 
-                competenze teoriche e pratiche nel settore digitale. 
-                Grazie al feedback personalizzato da esperti del settore, 
-                sto lavorando su <strong>progetti</strong> concreti che puoi scoprire qui.<br><br>
+            <p class="fade-in">
+                Attualmente lavoro come <strong>Full Stack Developer</strong>
+                all'interno di un team dedicato allo sviluppo di un applicativo web gestionale basato su
+                <strong>Python Django</strong> per il back-end, <strong>JavaScript</strong>,
+                <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong> per il front-end e 
+                <strong>MySQL</strong> per la gestione del database.
+                <br><br>
             </p>
 
-            <p class="slide-in">
-                Ho 3 anni di esperienza come data scientist nel settore delle
-                biotecnologie mediche, dove ho sviluppato competenze avanzate 
-                nella gestione e analisi di dati. Ho lavorato 
-                su progetti che uniscono <strong>competenze informatiche e 
-                scientifiche</strong>, utilizzando strumenti analitici e algoritmi per 
-                risolvere sfide nel campo delle scienze biologiche. Inoltre, 
-                la mia esperienza di collaborazione in team internazionali mi
-                ha permesso di affinare le mie capacità di comunicazione e 
-                problem solving.<br><br>
+           <p class="fade-in">
+                In parallelo all'attività lavorativa aziendale sto completando un Master in Full Stack Development offerto da 
+                <a class="bold-italics" href="https://www.start2impact.it/" target="_blank">Start2impact University</a>. 
+                Sto arricchendo la mia formazione principalmente approfondendo tecnologie come 
+                <strong>Angular</strong> e <strong>Java</strong>. 
+                Il Master consiste nello studio e superamento di test teorici e lo svolgimento di progetti pratici
+                che vengono poi corretti da esperti nel settore.
+                <br><br>
             </p>
 
-            <p class="slide-in">
-                Oggi, sono entusiasta di applicare le mie competenze
-                nella creazione di <strong>soluzioni digitali</strong> innovative
-                che risolvano problemi concreti e generino un impatto positivo e
-                significativo sulla comunità in cui viviamo.<br><br>
+            <p class="fade-in">
+                Sono entusiasta di applicare le mie competenze
+                nella creazione di <strong>soluzioni digitali</strong> che 
+                soddisfino le esigenze dei clienti contribundo alla loro crescita e sviluppo.
+                <br><br>
             </p>
 
-            <p class="slide-in">
+            <p class="fade-in">
                 Scopri di più su di me:<br><br>
             </p>
 
-            <div class="aboutme-buttons slide-in">
-                <button class="button"><a href="https://www.linkedin.com/in/elisabetta-nale/" target="_blank">CV</a></button>
-                <button class="button"><a href="#projects">Progetti</a></button>
-                <button class="button"><a href="#skills">Competenze</a></button>
+            <div class="aboutme-buttons">
+                <button class="button slide-in-left"><a href="https://www.linkedin.com/in/elisabetta-nale/" target="_blank">CV</a></button>
+                <button class="button slide-in-bottom"><a href="#projects">Progetti</a></button>
+                <button class="button slide-in-right"><a href="#skills">Competenze</a></button>
             </div>
         </div>
 
@@ -142,10 +161,10 @@
     <!-- SECTION: PROJECTS -->
     <section id="projects"> 
 
-        <p class="projects-title slide-in">I miei progetti</p>
+        <p class="projects-title slide-in-right">I miei progetti</p>
         
         <div class="cards-container">
-            <div class="card slide-in">
+            <!-- <div class="card slide-in">
                 <div class="card-content">
                     <p class="card-title">Servizi Statali</p>
                     <p class="card-description">
@@ -165,8 +184,8 @@
                         <a href="https://github.com/ElisabettaNale/servizi_statali_mysql_php_laravel" class="button" target="_blank">Codice</a>
                     </div>
                 </div>
-            </div>
-            <div class="card slide-in">
+            </div> -->
+            <div class="card slide-in-left">
                 <div class="card-content">
                     <p class="card-title">CivicDrive</p>
                     <p class="card-description">
@@ -186,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card slide-in">
+            <!-- <div class="card slide-in">
                 <div class="card-content">
                     <p class="card-title">Innovazione sportiva</p>
                     <p class="card-description">
@@ -205,8 +224,8 @@
                         <a href="https://codepen.io/ElisabettaNale/pen/azooNxr?editors=0010" class="button" target="_blank">Visita</a>   
                     </div>
                 </div>
-            </div>
-            <div class="card slide-in">
+            </div> -->
+            <!-- <div class="card slide-in">
                 <div class="card-content">
                     <p class="card-title">HackerNews</p>
                     <p class="card-description">
@@ -228,8 +247,8 @@
                         <a href="https://advancedjavascript-hackernews.netlify.app" class="button" target="_blank">Visita</a>
                     </div>
                 </div>
-            </div>
-            <div class="card slide-in">
+            </div> -->
+            <!-- <div class="card slide-in">
                 <div class="card-content">
                     <p class="card-title">Il counter</p>
                     <p class="card-description">
@@ -249,6 +268,24 @@
                         <a href="https://main--joyful-mermaid-53efe2.netlify.app" class="button" target="_blank">Visita</a>
                     </div>
                 </div>
+            </div> -->
+            <div class="card slide-in-right">
+                <div class="card-content">
+                    <p class="card-title">IncluDO</p>
+                    <p class="card-description">
+                        IncluDo simula una piattaforma che ha l'obiettivo di preservare e trasmettere 
+                        le competenze tradizionali rendedole accessibili a migranti e a persone
+                        coinvolte in percorsi di riabilitazione sociale.<br><br>
+                    <strong>Obiettivo</strong>: realizzare una interfaccia da riga di comando
+                        interamente in Java.<br><br>
+                        <div class="card-skills">
+                            <div class="card-skill">Java</div> 
+                        </div>
+                    </p>
+                    <div class="card-buttons">
+                        <a href="https://github.com/ElisabettaNale/includo_java" class="button" target="_blank">Codice</a>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -259,132 +296,99 @@
     <!-- SECTION: SKILLS -->
     <section id="skills">
 
-        <p class="skills-title slide-in">Le mie competenze</p>
+        <p class="skills-title slide-in-right">Le mie competenze</p>
 
-        <div class="skills-container slide-in">
-            <p class="skills-container-title">Front-end development</p>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/HTML_icon.svg" alt="Icona HTML" width="40" height="40" loading="lazy"/>
-                <p class="skill-name">HTML</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/CSS_icon.svg" alt="Icona CSS" width="30" height="42" loading="lazy"/>
-                <p class="skill-name">CSS</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/javascript_icon.webp" alt="Icona JavaScript" width="80" height="45" loading="lazy"/>
-                <p class="skill-name">JavaScript</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/typescript_icon.webp" alt="Icona TypeScript" width="40" height="40" loading="lazy"/>
-                <p class="skill-name">TypeScript</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/angular_icon.webp" alt="Icona Angular" width="40" height="40" loading="lazy"/>
-                <p class="skill-name">Angular</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/react_icon.webp" alt="Icona React" width="70" height="39.38" loading="lazy"/>
-                <p class="skill-name">React</p>
-            </div>   
-        </div>
+        <div class="skills-maxcontainer">
 
-        <div class="skills-container slide-in">
-            <p class="skills-container-title">Back-end development</p>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/python_icon.svg" alt="Icona Python" width="50" height="50" loading="lazy"/>
-                <p class="skill-name">Python</p>
+            <div class="skills-container slide-in-left">
+                <p class="skills-container-title">Front-end development</p>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/HTML_icon.svg" alt="Icona HTML" width="40" height="40" loading="lazy"/>
+                    <p class="skill-name">HTML</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/CSS_icon.svg" alt="Icona CSS" width="30" height="42" loading="lazy"/>
+                    <p class="skill-name">CSS</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/javascript_icon.webp" alt="Icona JavaScript" width="80" height="45" loading="lazy"/>
+                    <p class="skill-name">JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/typescript_icon.webp" alt="Icona TypeScript" width="40" height="40" loading="lazy"/>
+                    <p class="skill-name">TypeScript</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/angular_icon.webp" alt="Icona Angular" width="40" height="40" loading="lazy"/>
+                    <p class="skill-name">Angular</p>
+                </div>
+                <!-- <div class="skill">
+                    <img class="skill-image" src="assets/img/react_icon.webp" alt="Icona React" width="70" height="39.38" loading="lazy"/>
+                    <p class="skill-name">React</p>
+                </div>    -->
             </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/java_icon.svg" alt="Icona Java" width="40" height="40" loading="lazy"/>
-                <p class="skill-name">Java Basics</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/mysql_icon.webp" alt="Icona MySQL" width="55" height="38.16" loading="lazy"/>
-                <p class="skill-name">MySQL</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/php_icon.png" alt="Icona PHP" height="32" loading="lazy"/>
-                <p class="skill-name">PHP</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/laravel_icon.svg" alt="Icona laravel" height="43" loading="lazy"/>
-                <p class="skill-name">Laravel</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/node_javascript_icon.webp" alt="Icona Node.js" width="38" height="40.8" loading="lazy"/>
-                <p class="skill-name">Node.js</p>
-            </div>
-        </div>
 
-        <div class="skills-container slide-in">
-            <p class="skills-container-title">Conoscenze tecniche aggiuntive</p>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/R_icon.webp" alt="Icona R" width="50" height="38.73" loading="lazy"/>
-                <p class="skill-name">R</p>
-            </div> 
-            <div class="skill">
-                <img class="skill-image" src="assets/img/git_icon.webp" alt="Icona Git" width="50" height="50" loading="lazy"/>
-                <p class="skill-name">Git</p>
+            <div class="skills-container slide-in-right">
+                <p class="skills-container-title">Back-end development</p>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/python_icon.svg" alt="Icona Python" width="50" height="50" loading="lazy"/>
+                    <p class="skill-name">Python</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/java_icon.svg" alt="Icona Java" width="40" height="40" loading="lazy"/>
+                    <p class="skill-name">Java</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/mysql_icon.webp" alt="Icona MySQL" width="55" height="38.16" loading="lazy"/>
+                    <p class="skill-name">MySQL</p>
+                </div>
+                <!-- <div class="skill">
+                    <img class="skill-image" src="assets/img/php_icon.png" alt="Icona PHP" height="32" loading="lazy"/>
+                    <p class="skill-name">PHP</p>
+                </div> -->
+                <!-- <div class="skill">
+                    <img class="skill-image" src="assets/img/laravel_icon.svg" alt="Icona laravel" height="43" loading="lazy"/>
+                    <p class="skill-name">Laravel</p>
+                </div> -->
+                <!-- <div class="skill">
+                    <img class="skill-image" src="assets/img/node_javascript_icon.webp" alt="Icona Node.js" width="38" height="40.8" loading="lazy"/>
+                    <p class="skill-name">Node.js</p>
+                </div> -->
             </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/bash_icon.webp" alt="Icona Bash" width="40" height="45.8" loading="lazy"/>
-                <p class="skill-name">Bash</p>
+
+            <div class="skills-container slide-in-left">
+                <p class="skills-container-title">Conoscenze tecniche aggiuntive</p>
+                <!-- <div class="skill">
+                    <img class="skill-image" src="assets/img/R_icon.webp" alt="Icona R" width="50" height="38.73" loading="lazy"/>
+                    <p class="skill-name">R</p>
+                </div>  -->
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/git_icon.webp" alt="Icona Git" width="50" height="50" loading="lazy"/>
+                    <p class="skill-name">Git</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/bash_icon.webp" alt="Icona Bash" width="40" height="45.8" loading="lazy"/>
+                    <p class="skill-name">Bash</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/visual_studio_code_icon.webp" alt="Icona VSC" width="45" height="45" loading="lazy"/>
+                    <p class="skill-name">VSC</p>
+                </div>
+                <div class="skill">
+                    <img class="skill-image" src="assets/img/docker_icon.webp" alt="Icona Docker" width="45" height="45" loading="lazy"/>
+                    <p class="skill-name">Docker</p>
+                </div>
             </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/visual_studio_code_icon.webp" alt="Icona VSC" width="45" height="45" loading="lazy"/>
-                <p class="skill-name">VSC</p>
-            </div>
-            <div class="skill">
-                <img class="skill-image" src="assets/img/docker_icon.webp" alt="Icona Docker" width="45" height="45" loading="lazy"/>
-                <p class="skill-name">Docker</p>
-            </div>
+
         </div>
 
     </section>
-    <!-- SECTION: CONTACTS
-    <hr>
-
-    
-    
-    <section id="contacts"> 
-
-        <p class="contacts-title slide-in">Contatti</p>
-
-        <p class="contacts-description slide-in"> 
-            Grazie per aver visitato il mio sito!<br/>
-            Sono sempre alla ricerca di nuove opportunità nel mondo dello
-            sviluppo web. Se sei interessato a collaborare con me, compila 
-            il form qui sotto e sarò felice di risponderti al più presto!
-        </p> 
-
-        <div class="form slide-in">
-            
-            <div class="form-row">
-                <input type="text" id="name" placeholder="Nome" required>
-            </div>
-            <div class="form-row">
-                <input type="text" id="surname" placeholder="Cognome" required>
-            </div>
-            <div class="form-row">
-                <input type="email" id="email" placeholder="Email" required>
-            </div>
-            <div class="form-row">
-                <textarea id="message" placeholder="Scrivi qui il tuo messaggio..." rows="10" required></textarea>
-            </div>
-            <div class="form-row">
-                <button type="submit" onclick="sendMail()" class="button">Invia</button>
-            </div>
-        </div>
-        
-    </section>
-    -->
 
     <!-- FOOTER -->
     <footer>
 
         <div class="footer">
-           <p>© Elisabetta Nale 2024</p>
+           <p>© Elisabetta Nale 2025</p>
         </div>
 
     </footer>
