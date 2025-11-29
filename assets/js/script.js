@@ -1,52 +1,72 @@
-// Function to activate the home page animation
-// Initial delay 2 seconds
-// Delay between each slide 2 seconds
-document.addEventListener("DOMContentLoaded", function () {
-  const elements = [
-    document.querySelector(".home-bottom-job"),
-    document.querySelector(".home-bottom-student-of"),
-    document.querySelector(".home-bottom-location")
-  ];
-
-  let currentIndex = 0;
-
-  function updateElements() {
-    elements[currentIndex].style.display = "none";
-    currentIndex = (currentIndex + 1) % elements.length;
-    elements[currentIndex].style.display = "flex";
-  }
-
-  setTimeout(() => {
-    elements[currentIndex].style.display = "flex";
-    setInterval(updateElements, 2000); 
-  }, 2000); 
-});
-
-
-// Function to activate the slide-in animation 
-const slideInObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          entry.target.classList.add('slide-in-visible');
-      } else {
-          entry.target.classList.remove('slide-in-visible');  
-      }
-  });
-}, {
-  threshold: 0.5  
-});
-
-document.querySelectorAll('.slide-in').forEach(element => {
-  slideInObserver.observe(element); 
-});
-
-
 // Function to close the menu
 document.querySelectorAll('.menu-item').forEach(item => {
   item.addEventListener('click', () => {
       document.getElementById('menu-checkbox').checked = false; 
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  function createObserver(selector, visibleClass, threshold = 0.5) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(visibleClass);
+          obs.unobserve(entry.target); 
+        }
+      });
+    }, { threshold });
+
+    document.querySelectorAll(selector).forEach(el => observer.observe(el));
+  }
+
+  const animations = [
+    { selector: ".slide-in-right",  visible: "slide-in-right-visible",  threshold: 0.5 },
+    { selector: ".slide-in-top",    visible: "slide-in-top-visible",    threshold: 0.5 },
+    { selector: ".slide-in-left",   visible: "slide-in-left-visible",   threshold: 0.5 },
+    { selector: ".slide-in-bottom", visible: "slide-in-bottom-visible", threshold: 0.1 },
+    { selector: ".fade-in",         visible: "fade-in-visible",         threshold: 0.5 },
+  ];
+
+  animations.forEach(anim => {
+    createObserver(anim.selector, anim.visible, anim.threshold);
+  });
+
+});
+
+//
+document.addEventListener("DOMContentLoaded", () => {
+    const element = document.querySelector("#homepage-content-left img");
+
+    let currentX = 0;
+    let currentY = 0;
+    const speed = 0.1; // più piccolo = più fluido
+
+    element.addEventListener("mousemove", (e) => {
+        const rect = element.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const targetX = ((y - centerY) / centerY) * 10;  // max tilt verticale
+        const targetY = ((x - centerX) / centerX) * -10; // max tilt orizzontale
+
+        currentX += (targetX - currentX) * speed;
+        currentY += (targetY - currentY) * speed;
+
+        element.style.transform = `rotateX(${currentX}deg) rotateY(${currentY}deg)`;
+    });
+
+    element.addEventListener("mouseleave", () => {
+        currentX = 0;
+        currentY = 0;
+        element.style.transform = "rotateX(0deg) rotateY(0deg)";
+    });
+});
+
+
+
 
 
 // Function for buttons
@@ -64,34 +84,6 @@ const button = document.querySelectorAll('.button').forEach(item => {
     });
 });
 
-
-// Function to send an email
-function sendMail() {
-
-    let emailField = document.getElementById("email");
-    let params = {
-        name: document.getElementById("name").value,
-        surname: document.getElementById("surname").value,
-        email: emailField.value,
-        message: document.getElementById("message").value,
-    }
-
-    if (params.name === "" || params.surname === "" || params.email === "" || params.message === "") {
-        alert("Compila tutti i campi prima di inviare!")
-        return
-    } else if (!emailField.checkValidity()) {
-        alert("Formato dell'email non valido!")
-        return
-    } else {
-        emailjs.send("service_mqemc18", "template_ilqfayo", params).then(alert("L'email è stata inviata correttamente!"))
-
-        document.getElementById("name").value = "";
-        document.getElementById("surname").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-    }
-
-}
 
 
 
