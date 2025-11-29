@@ -8,6 +8,7 @@
 
 html {
     scroll-padding-top: 100px;
+    overflow-x: hidden;
 }
 
 body {
@@ -496,6 +497,14 @@ footer {
     .skills-container {
         width: 250px;
     }
+
+    .slide-in-right {
+        transform: translateX(10px);  
+    }
+
+    .slide-in-left {
+        transform: translateX(-10px);  
+    }
 }
 
 
@@ -541,7 +550,7 @@ footer {
 } 
 
 .slide-in-right {
-    transform: translateX(200px);  
+    transform: translateX(100px);  
     opacity: 0; 
     transition: transform 1.2s ease, opacity 0.1s ease;   
 }
@@ -552,7 +561,7 @@ footer {
 } 
 
 .slide-in-left {
-    transform: translateX(-200px);  
+    transform: translateX(-100px);  
     opacity: 0; 
     transition: transform 1.2s ease, opacity 0.1s ease;   
 }

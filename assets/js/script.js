@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(selector).forEach(el => observer.observe(el));
   }
-
+  
   const animations = [
     { selector: ".slide-in-right",  visible: "slide-in-right-visible",  threshold: 0.5 },
     { selector: ".slide-in-top",    visible: "slide-in-top-visible",    threshold: 0.5 },
@@ -28,9 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
     { selector: ".fade-in",         visible: "fade-in-visible",         threshold: 0.5 },
   ];
 
-  animations.forEach(anim => {
-    createObserver(anim.selector, anim.visible, anim.threshold);
-  });
+  const isSmallScreen = window.matchMedia("(max-width: 400px)").matches;
+  if (!isSmallScreen) {
+    animations.forEach(anim => {
+      createObserver(anim.selector, anim.visible, anim.threshold);
+    });
+  }
 
 });
 
