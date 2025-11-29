@@ -27,13 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     { selector: ".slide-in-bottom", visible: "slide-in-bottom-visible", threshold: 0.1 },
     { selector: ".fade-in",         visible: "fade-in-visible",         threshold: 0.5 },
   ];
-
-  const isSmallScreen = window.matchMedia("(max-width: 400px)").matches;
-  if (!isSmallScreen) {
-    animations.forEach(anim => {
-      createObserver(anim.selector, anim.visible, anim.threshold);
-    });
-  }
+  
+  animations.forEach(anim => {
+    createObserver(anim.selector, anim.visible, anim.threshold);
+  });
 
 });
 
