@@ -178,7 +178,7 @@ header label {
 
 .img-me {
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 #homepage-content-left {
@@ -470,7 +470,7 @@ header label {
     border-radius: 10px;
     margin: 20px;
     box-shadow: 0 4px 10px #000000;
-    width: 750px;
+    width: 250px;
 }
 
 .skills-container-title {
@@ -637,6 +637,10 @@ footer {
     .aboutme-description { 
         margin-left: 100px;
         margin-right: 100px;
+    }
+
+    .skills-container {  
+        width: 750px;
     }
 }
 
