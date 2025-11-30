@@ -5,6 +5,8 @@ document.querySelectorAll('.menu-item').forEach(item => {
   });
 });
 
+
+// Animazioni 
 document.addEventListener("DOMContentLoaded", () => {
 
   function createObserver(selector, visibleClass, threshold = 0.5) {
@@ -34,13 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-//
+// Animazione img-me
 document.addEventListener("DOMContentLoaded", () => {
     const element = document.querySelector("#homepage-content-left img");
 
     let currentX = 0;
     let currentY = 0;
-    const speed = 0.1; // più piccolo = più fluido
+    const speed = 0.1; 
 
     element.addEventListener("mousemove", (e) => {
         const rect = element.getBoundingClientRect();
@@ -49,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
 
-        const targetX = ((y - centerY) / centerY) * 10;  // max tilt verticale
-        const targetY = ((x - centerX) / centerX) * -10; // max tilt orizzontale
+        const targetX = ((y - centerY) / centerY) * 10;  
+        const targetY = ((x - centerX) / centerX) * -10; 
 
         currentX += (targetX - currentX) * speed;
         currentY += (targetY - currentY) * speed;
@@ -62,25 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
         currentX = 0;
         currentY = 0;
         element.style.transform = "rotateX(0deg) rotateY(0deg)";
-    });
-});
-
-
-
-
-
-// Function for buttons
-const button = document.querySelectorAll('.button').forEach(item => {
-
-    item.addEventListener('mouseover', () => {
-      item.classList.add('button-active');
-    });
-    item.addEventListener('mouseout', () => {
-      item.classList.remove('button-active');
-    });
-    item.addEventListener('click', () => {
-      item.classList.add('button-active'); 
-      item.classList.remove('button-active');
     });
 });
 
