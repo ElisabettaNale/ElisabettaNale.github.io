@@ -37,7 +37,7 @@ header {
     width: 100%;
     padding: 15px;
     position: fixed;
-    z-index: 100;
+    z-index: 2000;
 }
 
 .navbar {
