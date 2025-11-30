@@ -66,7 +66,3 @@ document.addEventListener("DOMContentLoaded", () => {
         element.style.transform = "rotateX(0deg) rotateY(0deg)";
     });
 });
-
-
-
-
